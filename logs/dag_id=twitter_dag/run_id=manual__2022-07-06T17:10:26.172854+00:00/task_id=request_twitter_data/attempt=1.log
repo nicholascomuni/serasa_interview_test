@@ -1,0 +1,53 @@
+[2022-07-06 14:10:30,109] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: twitter_dag.request_twitter_data manual__2022-07-06T17:10:26.172854+00:00 [queued]>
+[2022-07-06 14:10:30,121] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: twitter_dag.request_twitter_data manual__2022-07-06T17:10:26.172854+00:00 [queued]>
+[2022-07-06 14:10:30,121] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-06 14:10:30,121] {taskinstance.py:1357} INFO - Starting attempt 1 of 4
+[2022-07-06 14:10:30,121] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-06 14:10:30,151] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): request_twitter_data> on 2022-07-06 17:10:26.172854+00:00
+[2022-07-06 14:10:30,153] {standard_task_runner.py:52} INFO - Started process 30997 to run task
+[2022-07-06 14:10:30,176] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'twitter_dag', 'request_twitter_data', 'manual__2022-07-06T17:10:26.172854+00:00', '--job-id', '55', '--raw', '--subdir', 'DAGS_FOLDER/twitter_dag.py', '--cfg-path', '/tmp/tmpd53co_44', '--error-file', '/tmp/tmpej3bthv7']
+[2022-07-06 14:10:30,189] {standard_task_runner.py:80} INFO - Job 55: Subtask request_twitter_data
+[2022-07-06 14:10:30,344] {task_command.py:370} INFO - Running <TaskInstance: twitter_dag.request_twitter_data manual__2022-07-06T17:10:26.172854+00:00 [running]> on host nicholas-VirtualBox
+[2022-07-06 14:10:30,472] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nicholas.comuni@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Nicholas
+AIRFLOW_CTX_DAG_ID=twitter_dag
+AIRFLOW_CTX_TASK_ID=request_twitter_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-06T17:10:26.172854+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-07-06T17:10:26.172854+00:00
+[2022-07-06 14:10:31,214] {logging_mixin.py:115} INFO - /tmp/tmpv9jtd41c/corona.json
+[2022-07-06 14:10:31,219] {base.py:68} INFO - Using connection ID 'wasbconn' for task execution.
+[2022-07-06 14:10:31,227] {_universal.py:473} INFO - Request URL: 'https://serasadatalake.blob.core.windows.net/landingzone/hashtags/corona/2022/7/corona_2022-07-06%2014_10_31.214573.json'
+Request method: 'PUT'
+Request headers:
+    'x-ms-blob-type': 'REDACTED'
+    'Content-Length': '2553'
+    'If-None-Match': '*'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.8.1 Python/3.10.4 (Linux-5.15.0-39-generic-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '8a5cf6ba-fd4e-11ec-bec2-bb469e0cbda2'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2022-07-06 14:10:32,343] {_universal.py:504} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Wed, 06 Jul 2022 17:10:33 GMT'
+    'ETag': '"0x8DA5F726FD7828F"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3b515005-e01e-0002-515b-91f5bf000000'
+    'x-ms-client-request-id': '8a5cf6ba-fd4e-11ec-bec2-bb469e0cbda2'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Wed, 06 Jul 2022 17:10:33 GMT'
+[2022-07-06 14:10:32,346] {python.py:173} INFO - Done. Returned value was: None
+[2022-07-06 14:10:32,353] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=twitter_dag, task_id=request_twitter_data, execution_date=20220706T171026, start_date=20220706T171030, end_date=20220706T171032
+[2022-07-06 14:10:32,405] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-07-06 14:10:32,461] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

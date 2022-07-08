@@ -1,0 +1,90 @@
+[2022-07-06 20:43:24,293] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: twitter_dag.json_to_parquet_task manual__2022-07-06T23:43:13.120208+00:00 [queued]>
+[2022-07-06 20:43:24,304] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: twitter_dag.json_to_parquet_task manual__2022-07-06T23:43:13.120208+00:00 [queued]>
+[2022-07-06 20:43:24,305] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-06 20:43:24,305] {taskinstance.py:1357} INFO - Starting attempt 1 of 4
+[2022-07-06 20:43:24,305] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-06 20:43:24,325] {taskinstance.py:1377} INFO - Executing <Task(DatabricksRunNowOperator): json_to_parquet_task> on 2022-07-06 23:43:13.120208+00:00
+[2022-07-06 20:43:24,327] {standard_task_runner.py:52} INFO - Started process 140258 to run task
+[2022-07-06 20:43:24,333] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'twitter_dag', 'json_to_parquet_task', 'manual__2022-07-06T23:43:13.120208+00:00', '--job-id', '80', '--raw', '--subdir', 'DAGS_FOLDER/twitter_dag.py', '--cfg-path', '/tmp/tmpb8lxyk7z', '--error-file', '/tmp/tmpjoa068gp']
+[2022-07-06 20:43:24,334] {standard_task_runner.py:80} INFO - Job 80: Subtask json_to_parquet_task
+[2022-07-06 20:43:24,373] {task_command.py:370} INFO - Running <TaskInstance: twitter_dag.json_to_parquet_task manual__2022-07-06T23:43:13.120208+00:00 [running]> on host nicholas-VirtualBox
+[2022-07-06 20:43:24,446] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=nicholas.comuni@outlook.com
+AIRFLOW_CTX_DAG_OWNER=Nicholas
+AIRFLOW_CTX_DAG_ID=twitter_dag
+AIRFLOW_CTX_TASK_ID=json_to_parquet_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-06T23:43:13.120208+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-07-06T23:43:13.120208+00:00
+[2022-07-06 20:43:24,453] {base.py:68} INFO - Using connection ID 'databricks_conn' for task execution.
+[2022-07-06 20:43:24,455] {databricks_base.py:406} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2022-07-06 20:43:25,572] {databricks.py:49} INFO - Run submitted with run_id: 25136
+[2022-07-06 20:43:25,573] {databricks_base.py:406} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2022-07-06 20:43:26,191] {databricks_base.py:406} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2022-07-06 20:43:26,905] {databricks.py:71} INFO - json_to_parquet_task in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2022-07-06 20:43:26,906] {databricks.py:72} INFO - View run status, Spark UI, and logs at https://adb-770153189229877.17.azuredatabricks.net/?o=770153189229877#job/711735064242409/run/25136
+[2022-07-06 20:43:26,906] {databricks.py:73} INFO - Sleeping for 30 seconds.
+[2022-07-06 20:43:56,950] {databricks_base.py:406} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2022-07-06 20:43:57,506] {databricks.py:71} INFO - json_to_parquet_task in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2022-07-06 20:43:57,506] {databricks.py:72} INFO - View run status, Spark UI, and logs at https://adb-770153189229877.17.azuredatabricks.net/?o=770153189229877#job/711735064242409/run/25136
+[2022-07-06 20:43:57,506] {databricks.py:73} INFO - Sleeping for 30 seconds.
+[2022-07-06 20:44:27,552] {databricks_base.py:406} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2022-07-06 20:44:28,123] {databricks.py:71} INFO - json_to_parquet_task in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2022-07-06 20:44:28,123] {databricks.py:72} INFO - View run status, Spark UI, and logs at https://adb-770153189229877.17.azuredatabricks.net/?o=770153189229877#job/711735064242409/run/25136
+[2022-07-06 20:44:28,123] {databricks.py:73} INFO - Sleeping for 30 seconds.
+[2022-07-06 20:44:58,151] {databricks_base.py:406} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2022-07-06 20:44:58,740] {databricks.py:71} INFO - json_to_parquet_task in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2022-07-06 20:44:58,740] {databricks.py:72} INFO - View run status, Spark UI, and logs at https://adb-770153189229877.17.azuredatabricks.net/?o=770153189229877#job/711735064242409/run/25136
+[2022-07-06 20:44:58,741] {databricks.py:73} INFO - Sleeping for 30 seconds.
+[2022-07-06 20:45:28,762] {databricks_base.py:406} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2022-07-06 20:45:29,417] {databricks.py:71} INFO - json_to_parquet_task in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2022-07-06 20:45:29,418] {databricks.py:72} INFO - View run status, Spark UI, and logs at https://adb-770153189229877.17.azuredatabricks.net/?o=770153189229877#job/711735064242409/run/25136
+[2022-07-06 20:45:29,418] {databricks.py:73} INFO - Sleeping for 30 seconds.
+[2022-07-06 20:45:59,446] {databricks_base.py:406} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2022-07-06 20:46:00,012] {databricks.py:71} INFO - json_to_parquet_task in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2022-07-06 20:46:00,012] {databricks.py:72} INFO - View run status, Spark UI, and logs at https://adb-770153189229877.17.azuredatabricks.net/?o=770153189229877#job/711735064242409/run/25136
+[2022-07-06 20:46:00,012] {databricks.py:73} INFO - Sleeping for 30 seconds.
+[2022-07-06 20:46:30,042] {databricks_base.py:406} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2022-07-06 20:46:30,672] {databricks.py:71} INFO - json_to_parquet_task in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2022-07-06 20:46:30,672] {databricks.py:72} INFO - View run status, Spark UI, and logs at https://adb-770153189229877.17.azuredatabricks.net/?o=770153189229877#job/711735064242409/run/25136
+[2022-07-06 20:46:30,672] {databricks.py:73} INFO - Sleeping for 30 seconds.
+[2022-07-06 20:47:00,728] {databricks_base.py:406} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2022-07-06 20:47:01,355] {databricks.py:71} INFO - json_to_parquet_task in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2022-07-06 20:47:01,355] {databricks.py:72} INFO - View run status, Spark UI, and logs at https://adb-770153189229877.17.azuredatabricks.net/?o=770153189229877#job/711735064242409/run/25136
+[2022-07-06 20:47:01,355] {databricks.py:73} INFO - Sleeping for 30 seconds.
+[2022-07-06 20:47:31,379] {databricks_base.py:406} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2022-07-06 20:47:32,167] {databricks.py:71} INFO - json_to_parquet_task in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2022-07-06 20:47:32,167] {databricks.py:72} INFO - View run status, Spark UI, and logs at https://adb-770153189229877.17.azuredatabricks.net/?o=770153189229877#job/711735064242409/run/25136
+[2022-07-06 20:47:32,167] {databricks.py:73} INFO - Sleeping for 30 seconds.
+[2022-07-06 20:48:02,194] {databricks_base.py:406} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2022-07-06 20:48:02,796] {databricks.py:71} INFO - json_to_parquet_task in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2022-07-06 20:48:02,796] {databricks.py:72} INFO - View run status, Spark UI, and logs at https://adb-770153189229877.17.azuredatabricks.net/?o=770153189229877#job/711735064242409/run/25136
+[2022-07-06 20:48:02,796] {databricks.py:73} INFO - Sleeping for 30 seconds.
+[2022-07-06 20:48:32,827] {databricks_base.py:406} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2022-07-06 20:48:33,825] {databricks.py:71} INFO - json_to_parquet_task in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2022-07-06 20:48:33,825] {databricks.py:72} INFO - View run status, Spark UI, and logs at https://adb-770153189229877.17.azuredatabricks.net/?o=770153189229877#job/711735064242409/run/25136
+[2022-07-06 20:48:33,825] {databricks.py:73} INFO - Sleeping for 30 seconds.
+[2022-07-06 20:49:03,836] {databricks_base.py:406} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2022-07-06 20:49:04,405] {databricks.py:71} INFO - json_to_parquet_task in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2022-07-06 20:49:04,405] {databricks.py:72} INFO - View run status, Spark UI, and logs at https://adb-770153189229877.17.azuredatabricks.net/?o=770153189229877#job/711735064242409/run/25136
+[2022-07-06 20:49:04,405] {databricks.py:73} INFO - Sleeping for 30 seconds.
+[2022-07-06 20:49:34,451] {databricks_base.py:406} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2022-07-06 20:49:35,240] {databricks.py:71} INFO - json_to_parquet_task in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2022-07-06 20:49:35,240] {databricks.py:72} INFO - View run status, Spark UI, and logs at https://adb-770153189229877.17.azuredatabricks.net/?o=770153189229877#job/711735064242409/run/25136
+[2022-07-06 20:49:35,240] {databricks.py:73} INFO - Sleeping for 30 seconds.
+[2022-07-06 20:50:05,271] {databricks_base.py:406} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2022-07-06 20:50:05,859] {databricks.py:71} INFO - json_to_parquet_task in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2022-07-06 20:50:05,859] {databricks.py:72} INFO - View run status, Spark UI, and logs at https://adb-770153189229877.17.azuredatabricks.net/?o=770153189229877#job/711735064242409/run/25136
+[2022-07-06 20:50:05,859] {databricks.py:73} INFO - Sleeping for 30 seconds.
+[2022-07-06 20:50:35,875] {databricks_base.py:406} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2022-07-06 20:50:36,441] {databricks.py:71} INFO - json_to_parquet_task in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2022-07-06 20:50:36,441] {databricks.py:72} INFO - View run status, Spark UI, and logs at https://adb-770153189229877.17.azuredatabricks.net/?o=770153189229877#job/711735064242409/run/25136
+[2022-07-06 20:50:36,441] {databricks.py:73} INFO - Sleeping for 30 seconds.
+[2022-07-06 20:51:06,470] {databricks_base.py:406} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2022-07-06 20:51:07,167] {databricks.py:59} INFO - json_to_parquet_task completed successfully.
+[2022-07-06 20:51:07,167] {databricks.py:60} INFO - View run status, Spark UI, and logs at https://adb-770153189229877.17.azuredatabricks.net/?o=770153189229877#job/711735064242409/run/25136
+[2022-07-06 20:51:07,174] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=twitter_dag, task_id=json_to_parquet_task, execution_date=20220706T234313, start_date=20220706T234324, end_date=20220706T235107
+[2022-07-06 20:51:07,219] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-07-06 20:51:07,244] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
