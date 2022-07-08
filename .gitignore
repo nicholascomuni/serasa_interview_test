@@ -1,8 +1,8 @@
-airflow.cfg 
-airflow.db 
 airflow-webserver.pid 
 webserver_config.py 
 logs/
 *.cfg
 *j_
 *.db
+*.json
+*pycache__
