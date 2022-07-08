@@ -2,7 +2,7 @@ import airflow
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
-from transformation import *
+from transformations import *
 
 from airflow.providers.databricks.operators.databricks import DatabricksRunNowOperator
 from airflow.providers.microsoft.azure.sensors.wasb import WasbPrefixSensor
